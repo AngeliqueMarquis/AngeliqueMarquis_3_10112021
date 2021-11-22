@@ -1,0 +1,61 @@
+/* Général */
+$clr-primaire:#9356DC;
+$clr-secondaire: #FF79DA;
+$clr-tertiaire: #99E2D0;
+
+body
+{
+    width: 90%;
+    font-family: 'roboto', sans-serif;
+    margin-left: 4%;
+}
+
+h1
+{
+    font-family: 'shrikhand', sans-serif;
+}
+
+h2, h3
+{
+    font-weight: 900;
+    margin-top: 2%;
+    font-family: 'roboto', sans-serif;
+}
+
+h4
+{
+    font-family: 'roboto', sans-serif;
+    font-weight: normal;
+}
+
+/*Pied de page*/
+footer
+{
+    background-color: grey;
+    color: white;
+    font-weight: 100;
+    padding: 2%;
+
+        h1
+        {
+            font-size: 25px;
+            margin-top: 0%;
+        }
+
+            ul
+            {
+                list-style-type: none;
+            }
+            
+                li
+                {
+                    padding-top:1% ;
+                    margin-left: -3%;
+                }
+
+                    a
+                    {
+                        text-decoration: none;
+                        color: white;
+                    }
+}

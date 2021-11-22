@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* Général */
+body {
+  width: 90%;
+  font-family: "roboto", sans-serif;
+  margin-left: 4%;
+}
+
+h1 {
+  font-family: "shrikhand", sans-serif;
+}
+
+h2, h3 {
+  font-weight: 900;
+  margin-top: 2%;
+  font-family: "roboto", sans-serif;
+}
+
+h4 {
+  font-family: "roboto", sans-serif;
+  font-weight: normal;
+}
+
+/*Pied de page*/
+footer {
+  background-color: grey;
+  color: white;
+  font-weight: 100;
+  padding: 2%;
+}
+footer h1 {
+  font-size: 25px;
+  margin-top: 0%;
+}
+footer ul {
+  list-style-type: none;
+}
+footer li {
+  padding-top: 1%;
+  margin-left: -3%;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* En tete */
+header, form {
+  margin-top: 4%;
+  text-align: center;
+}
+
+header img {
+  width: 25%;
+}
+
+form {
+  width: 40%;
+  background-color: #e3e4e6;
+  margin-left: 30%;
+  height: 50px;
+  padding-left: 2%;
+  margin-top: 2%;
+}
+form input {
+  margin: 3% 0 0 2%;
+  color: black;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+/* Réservation */
+button {
+  background: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
+  border-radius: 20px;
+  border: 0 solid transparent;
+  color: white;
+  width: 22%;
+  height: 45px;
+}
+button a {
+  text-decoration: none;
+  font-style: normal;
+  color: white;
+}
+
+.reservation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Fonctionnement*/
+.fonctionnement {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
+  margin-top: 2%;
+}
+.fonctionnement .cartes {
+  margin-left: 4%;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: 0 5px 10px #e3e3e3;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 60px;
+  padding-left: 2%;
+}
+.fonctionnement i {
+  padding-right: 5%;
+  color: grey;
+}
+.fonctionnement p {
+  position: absolute;
+  left: -4%;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fonctionnement :hover {
+  background-color: #f2eafb;
+}
+.fonctionnement i:hover {
+  color: #9356DC;
+}
+
+/*Restaurants*/
+.restaurants {
+  background-color: #e8e7e7;
+  height: 600px;
+}
+.restaurants a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants aside {
+  display: flex;
+  flex-wrap: wrap;
+}
+.restaurants h2 {
+  padding: 2%;
+}
+.restaurants .details-restaurants {
+  background-color: white;
+  border-radius: 15px;
+  height: 220px;
+  width: 26%;
+  display: block;
+  position: relative;
+  margin: -1% 3% 3% 3%;
+}
+.restaurants img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.restaurants h3, .restaurants p {
+  margin-left: 2%;
+}
+.restaurants i {
+  position: absolute;
+  bottom: 14%;
+  left: 85%;
+  color: black;
+  background-color: white;
+}
+.restaurants p {
+  margin-top: -4%;
+}
+.restaurants ::before {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*# sourceMappingURL=acceuil.css.map */

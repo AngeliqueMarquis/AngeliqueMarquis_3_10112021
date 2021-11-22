@@ -1,0 +1,13 @@
+{
+    "name": "p3_marquis_angelique",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./scss:./css",
+      "prefix": "postcss ./css/ --use autoprefixer -d ./css/prefixed/"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  

@@ -1,0 +1,111 @@
+@import "base";
+
+/* En-tête */
+
+header
+{
+    display: flex;
+    align-items: center;
+    margin: 2%;
+    
+    img 
+    {
+        padding-left: 40%;
+    }
+}
+
+/* Menu */
+main
+{
+    img
+    {
+        width: 90%;
+        position: absolute;
+        height: 500px;
+        object-fit: cover;
+    }
+
+        section 
+        {
+            background-color: gainsboro;
+            border-radius: 60px 60px 0 0;
+            height: auto;
+            position: relative;
+            top: 449px;
+            padding: 2%;
+        }
+
+            h1
+            {
+                display: flex;
+                justify-content: space-between;
+            }
+
+                h4 
+                {
+                    border-bottom: 3px solid #99e2d0;
+                    width: 14%;
+                    padding-bottom: 1%;
+                    margin: 4% 56% 0% 3%;
+                }   
+
+                    .menu
+                    {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-right: 2%;
+                    }
+
+                        .entree, .plat, .dessert
+                        {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                            width: 30%;    
+                        }
+
+                                .menu-details
+                                {
+                                    background-color: white;
+                                    border-radius: 15px;
+                                    width: 105%;
+                                    padding: 2% 0% 2% 2%;
+                                    margin-top: 3%;
+                                    margin-right: 2%;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+
+                                    p 
+                                    {
+                                        margin-top: -1%;
+                                    }
+
+                                        b
+                                        {
+                                            display: flex;
+                                            justify-content: flex-end;
+                                            padding-right: 2%;
+                                            margin-top: -11%;
+                                        }
+
+                                            button
+                                            {
+                                                margin-top: 2%;
+                                                background: linear-gradient(174deg,$clr-secondaire 0%, $clr-primaire 90%);
+                                                border-radius: 20px;
+                                                border: 0 solid transparent;
+                                                color: white;
+                                                width: 22%;
+                                                height: 45px;
+                                                margin-left: 39%;
+                                            }
+}
+/* Pied de Page */
+footer
+{
+    position: relative;
+    top: 449px;
+}

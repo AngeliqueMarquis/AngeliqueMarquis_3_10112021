@@ -1,0 +1,60 @@
+@import "base";
+
+/* Chargement */
+
+.chargement
+{
+    display: flex;
+    flex-direction: column;      
+    text-align: center;
+    margin-top:20%;  
+    background: linear-gradient(30deg, $clr-secondaire 30%, $clr-primaire 70%);
+    background-clip: text;
+    color: transparent;
+    animation: fadein 3s;
+    transition-duration: 3s;
+    
+        .fas
+        {
+            color: $clr-secondaire;
+            font-size: 40px; 
+        }
+}
+
+@keyframes fadein 
+{
+    from 
+    {
+        opacity:0;
+    }
+
+    to 
+    {
+        opacity:1;
+    }
+
+}
+
+/* Restaurants */
+.restaurants .fa-heart:hover
+{
+    background: linear-gradient($clr-primaire, $clr-secondaire);
+    opacity: 1;
+    transform: scale(1.2);
+    animation: fill 2s ease-out;
+}
+
+@keyframes fill
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+
