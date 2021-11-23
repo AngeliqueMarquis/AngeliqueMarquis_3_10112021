@@ -1,0 +1,169 @@
+@import "base";
+
+/* En tete */
+header, form 
+{
+    margin-top: 4%;
+    text-align: center;
+}
+
+header img
+{
+    width: 25%;
+}
+
+form
+{
+    width: 40%;
+    background-color: #eaeaea;
+    margin-left: 30%;
+    height: 50px;
+    padding-left: 2%;
+    margin-top: 2%;
+
+    input
+    {
+        margin: 3% 0 0 2%;
+        color: black;
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+/* Réservation */
+button 
+{
+    width: 22%;
+    height: 45px;
+    @include btn-degrade;
+    @include ombres;
+
+        a
+        {
+            text-decoration: none;
+            font-style: normal;
+            color: white;
+        }
+}
+
+.reservation
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Fonctionnement*/
+.fonctionnement
+{
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    margin-top: 2%;
+
+    .cartes
+    {
+        margin-left: 4%; 
+        background-color:$clr-fond;
+        border-radius: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 250px;
+        height: 60px;
+        padding-left: 2%;
+        @include ombres
+    }
+        i
+        {
+            padding-right: 5%;
+            color: grey;
+        }
+
+            p
+            {
+                position: absolute;
+                left: -4%;
+                background-color: $clr-primaire;
+                color: white;
+                border-radius: 100%;
+                width: 25px;
+                height: 25px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }       
+                :hover
+            {
+                background-color: lighten($color: $clr-primaire, $amount: 35);
+            }
+                & i:hover
+                {
+                    color: $clr-primaire;
+                }
+}
+
+/*Restaurants*/
+.restaurants
+{
+    background-color:$clr-fond ;
+    height: 600px;
+    
+        a
+        {
+            text-decoration: none;
+            color: black;
+        }
+            aside
+            {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+                h2
+                {
+                    padding: 2%;
+                }
+
+                    .details-restaurants
+                    {
+                        background-color: white;
+                        border-radius: 15px;  
+                        height: 220px;
+                        width: 26%;
+                        display: block;
+                        position: relative;
+                        margin: -1% 3% 3% 3%;
+                        @include ombres;
+                    }
+
+                        img
+                        {
+                            border-radius: 15px 15px 0 0;
+                            width:100%;
+                            height: 70%;
+                            object-fit: cover;
+                        }
+
+                            h3, p
+                            {
+                                margin-left: 2%;
+                            }
+                                i
+                                {
+                                    position: absolute;
+                                    bottom: 14%;
+                                    left: 85%;
+                                }
+
+                                    p
+                                    {
+                                        margin-top: -4%;
+                                    }
+                                        ::before
+                                        {
+                                            display: flex;
+                                            flex-wrap: wrap;
+                                        }
+}
+
