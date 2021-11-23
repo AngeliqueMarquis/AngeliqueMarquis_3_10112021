@@ -94,13 +94,10 @@ main
                                             button
                                             {
                                                 margin-top: 2%;
-                                                background: linear-gradient(174deg,$clr-secondaire 0%, $clr-primaire 90%);
-                                                border-radius: 20px;
-                                                border: 0 solid transparent;
-                                                color: white;
                                                 width: 22%;
                                                 height: 45px;
                                                 margin-left: 39%;
+                                                @include btn-degrade;
                                             }
 }
 /* Pied de Page */

@@ -4,44 +4,50 @@
 
 .chargement
 {
-    display: flex;
-    flex-direction: column;      
-    text-align: center;
-    margin-top:20%;  
-    background: linear-gradient(30deg, $clr-secondaire 30%, $clr-primaire 70%);
-    background-clip: text;
-    color: transparent;
-    animation: fadein 3s;
-    transition-duration: 3s;
-    
-        .fas
-        {
-            color: $clr-secondaire;
-            font-size: 40px; 
-        }
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    inset: 0;
+    width: 100%;
+    animation: load 3s forwards;
+    transform-origin: center;
+
+    &::after
+    {
+        content: "Chargement...";
+        background: linear-gradient(30deg, $clr-secondaire, $clr-primaire);
+        background-clip: text;
+        color: transparent;
+        font: 1.5em 'shrikhand';
+        position: absolute;
+        margin: 27% 0 0 42%;
+    }
+
 }
 
-@keyframes fadein 
+@keyframes load 
 {
-    from 
+    from
     {
-        opacity:0;
+        opacity: 1;
     }
 
-    to 
+    to
     {
-        opacity:1;
+        opacity: 0;
+        visibility: hidden;
     }
-
 }
 
 /* Restaurants */
-.restaurants .fa-heart:hover
+.fa-heart:hover
 {
-    background: linear-gradient($clr-primaire, $clr-secondaire);
-    opacity: 1;
+    background-image: linear-gradient($clr-primaire, $clr-secondaire);
+    color: transparent;
+    background-clip: text;
     transform: scale(1.2);
     animation: fill 2s ease-out;
+    font-weight: bold;
 }
 
 @keyframes fill
@@ -56,5 +62,3 @@
         opacity: 1;
     }
 }
-
-
