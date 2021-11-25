@@ -107,7 +107,7 @@ button
 .restaurants
 {
     background-color:$clr-fond ;
-    height: 600px;
+    height: 400px;
     
         a
         {
@@ -130,10 +130,10 @@ button
                         background-color: white;
                         border-radius: 15px;  
                         height: 220px;
-                        width: 26%;
+                        width: 22%;
                         display: block;
                         position: relative;
-                        margin: -1% 3% 3% 3%;
+                        margin: -1% -1% 3% 3%;
                         @include ombres;
                     }
 
