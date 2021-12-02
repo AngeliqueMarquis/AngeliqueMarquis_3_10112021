@@ -6,6 +6,14 @@ body {
   width: 90%;
   font-family: "roboto", sans-serif;
   margin-left: 4%;
+  max-width: 1400px;
+}
+@media all and (max-width: 992px) {
+  body {
+    max-width: 992px;
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 
 h1 {
@@ -30,16 +38,49 @@ footer {
   font-weight: 100;
   padding: 2%;
 }
+@media all and (max-width: 768px) {
+  footer {
+    height: 216px;
+  }
+}
 footer h1 {
   font-size: 25px;
   margin-top: 0%;
 }
+@media all and (max-width: 768px) {
+  footer h1 {
+    font-size: 18px;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}
 footer ul {
   list-style-type: none;
+  display: flex;
+}
+@media all and (max-width: 992px) {
+  footer ul {
+    flex-direction: column;
+  }
+}
+@media all and (max-width: 768px) {
+  footer ul {
+    margin-left: -6%;
+  }
 }
 footer li {
   padding-top: 1%;
-  margin-left: -3%;
+  margin-left: 10%;
+}
+@media all and (max-width: 992px) {
+  footer li {
+    margin-left: 0%;
+  }
+}
+@media all and (max-width: 768px) {
+  footer li {
+    padding-bottom: 1%;
+  }
 }
 footer a {
   text-decoration: none;
@@ -51,9 +92,19 @@ header, form {
   margin-top: 4%;
   text-align: center;
 }
+@media all and (max-width: 768px) {
+  header, form {
+    height: 40px;
+  }
+}
 
 header img {
   width: 25%;
+}
+@media all and (max-width: 768px) {
+  header img {
+    width: 40%;
+  }
 }
 
 form {
@@ -63,6 +114,21 @@ form {
   height: 50px;
   padding-left: 2%;
   margin-top: 2%;
+  box-shadow: 0 5px 10px #c6c6c6;
+}
+@media all and (max-width: 992px) {
+  form {
+    height: 40px;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 0%;
+  }
+}
+@media all and (max-width: 768px) {
+  form {
+    padding-left: 8%;
+    width: 92%;
+  }
 }
 form input {
   margin: 3% 0 0 2%;
@@ -70,16 +136,36 @@ form input {
   background-color: transparent;
   border-color: transparent;
 }
+@media all and (max-width: 992px) {
+  form input {
+    margin-top: 1%;
+  }
+}
+@media all and (max-width: 768px) {
+  form input {
+    margin-top: 2%;
+  }
+}
 
 /* Réservation */
 button {
   width: 22%;
   height: 45px;
   background: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
-  border-radius: 20px;
+  border-radius: 23px;
   border: 0 solid transparent;
   color: white;
   box-shadow: 0 5px 10px #c6c6c6;
+}
+@media all and (max-width: 992px) {
+  button {
+    width: 25%;
+  }
+}
+@media all and (max-width: 768px) {
+  button {
+    width: 57%;
+  }
 }
 button a {
   text-decoration: none;
@@ -92,6 +178,30 @@ button a {
   align-items: center;
   flex-direction: column;
 }
+@media all and (max-width: 992px) {
+  .reservation {
+    background-color: #f6f6f6;
+    padding-bottom: 3%;
+  }
+}
+@media all and (max-width: 768px) {
+  .reservation {
+    height: 237px;
+    padding: 8% 0% 0% 2%;
+    text-align: center;
+  }
+}
+@media all and (max-width: 768px) {
+  .reservation p {
+    margin: -2% 0% 7% 0%;
+    color: grey;
+  }
+}
+@media all and (max-width: 768px) {
+  .reservation h2 {
+    padding: 0% 11% 0% 11%;
+  }
+}
 
 /*Fonctionnement*/
 .fonctionnement {
@@ -100,10 +210,21 @@ button a {
   padding-left: 2%;
   margin-top: 2%;
 }
+@media all and (max-width: 992px) {
+  .fonctionnement {
+    flex-direction: column;
+    padding-bottom: 2%;
+  }
+}
+@media all and (max-width: 768px) {
+  .fonctionnement {
+    height: 395px;
+  }
+}
 .fonctionnement .cartes {
   margin-left: 4%;
   background-color: #f6f6f6;
-  border-radius: 15px;
+  border-radius: 20px;
   position: relative;
   display: flex;
   align-items: center;
@@ -112,9 +233,26 @@ button a {
   padding-left: 2%;
   box-shadow: 0 5px 10px #c6c6c6;
 }
+@media all and (max-width: 992px) {
+  .fonctionnement .cartes {
+    margin-top: 2%;
+  }
+}
+@media all and (max-width: 768px) {
+  .fonctionnement .cartes {
+    width: 320px;
+    height: 70px;
+    margin-bottom: 3%;
+  }
+}
 .fonctionnement i {
   padding-right: 5%;
   color: grey;
+}
+@media all and (max-width: 768px) {
+  .fonctionnement i {
+    padding: 0% 7% 1% 8%;
+  }
 }
 .fonctionnement p {
   position: absolute;
@@ -134,41 +272,96 @@ button a {
 .fonctionnement i:hover {
   color: #9356DC;
 }
+@media all and (max-width: 992px) {
+  .fonctionnement h2 {
+    margin-left: -77%;
+  }
+}
+@media all and (max-width: 768px) {
+  .fonctionnement h2 {
+    text-align: start;
+    margin-left: -46%;
+    padding-top: 8%;
+  }
+}
 
 /*Restaurants*/
 .restaurants {
   background-color: #f6f6f6;
-  height: 600px;
+  height: 375px;
+}
+@media all and (max-width: 992px) {
+  .restaurants {
+    height: 1050px;
+  }
+}
+@media all and (max-width: 768px) {
+  .restaurants {
+    height: 1145px;
+  }
 }
 .restaurants a {
   text-decoration: none;
   color: black;
 }
-.restaurants aside {
+.restaurants div {
   display: flex;
   flex-wrap: wrap;
 }
+@media all and (max-width: 992px) {
+  .restaurants div {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2%;
+  }
+}
 .restaurants h2 {
-  padding: 2%;
+  padding: 2% 2% 3% 2%;
+}
+@media all and (max-width: 768px) {
+  .restaurants h2 {
+    margin: 0% 0% 3% 4%;
+    padding-top: 12%;
+  }
 }
 .restaurants .details-restaurants {
   background-color: white;
   border-radius: 15px;
   height: 220px;
-  width: 26%;
+  width: 22%;
   display: block;
   position: relative;
-  margin: -1% 3% 3% 3%;
+  margin: -1% -1% 3% 3%;
   box-shadow: 0 5px 10px #c6c6c6;
+}
+@media all and (max-width: 992px) {
+  .restaurants .details-restaurants {
+    width: 40%;
+  }
+}
+@media all and (max-width: 768px) {
+  .restaurants .details-restaurants {
+    width: 90%;
+    margin-left: -1%;
+    height: 235px;
+    margin-bottom: 6%;
+  }
 }
 .restaurants img {
   border-radius: 15px 15px 0 0;
   width: 100%;
   height: 70%;
   object-fit: cover;
+  object-position: bottom;
 }
 .restaurants h3, .restaurants p {
   margin-left: 2%;
+}
+@media all and (max-width: 768px) {
+  .restaurants h3, .restaurants p {
+    margin-left: 4%;
+    margin-top: 3%;
+  }
 }
 .restaurants i {
   position: absolute;

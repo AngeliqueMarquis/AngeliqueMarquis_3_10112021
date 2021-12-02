@@ -7,7 +7,7 @@
 @mixin btn-degrade 
 {
     background: linear-gradient(174deg,$clr-secondaire 0%, $clr-primaire 90%);
-    border-radius: 20px;
+    border-radius: 23px;
     border: 0 solid transparent;
     color: white;
 }
@@ -24,7 +24,16 @@ body
     width: 90%;
     font-family: 'roboto', sans-serif;
     margin-left: 4%;
+    max-width: 1400px;
+
+    @media all and (max-width: 992px)
+    {
+    max-width: 992px;
+    width: 100%;
+    margin-left: 0%;
+    }
 }
+
 
 h1
 {
@@ -52,22 +61,54 @@ footer
     font-weight: 100;
     padding: 2%;
 
+    @media all and (max-width: 768px)
+    {
+        height: 216px;
+    }
+
         h1
         {
             font-size: 25px;
             margin-top: 0%;
+
+            @media all and (max-width: 768px)
+            {
+                font-size: 18px;
+                margin-left: 5%;
+                margin-top: 5%;
+            }
         }
 
             ul
             {
                 list-style-type: none;
                 display: flex;
+
+                @media all and (max-width: 992px)
+                {
+                flex-direction: column;
+                }
+
+                @media all and (max-width: 768px)
+                {
+                    margin-left: -6%;
+                }
             }
             
                 li
                 {
                     padding-top:1% ;
                     margin-left: 10%;
+                    
+                    @media all and (max-width: 992px)
+                    {
+                        margin-left: 0%;
+                    }
+
+                    @media all and (max-width:768px)
+                    {
+                        padding-bottom: 1%;
+                    }
                 }
 
                     a
