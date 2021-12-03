@@ -118,7 +118,7 @@ header img {
 
 @media all and (max-width: 768px) {
   header img {
-    padding-left: 17%;
+    padding-left: 24%;
     width: 42%;
   }
 }
@@ -136,6 +136,9 @@ main img {
 @media all and (max-width: 768px) {
   main img {
     width: 100%;
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
+    height: auto;
   }
 }
 main section {
@@ -215,6 +218,7 @@ main .entree, main .plat, main .dessert {
   main .entree, main .plat, main .dessert {
     width: 100%;
     margin-left: -6%;
+    margin-top: 6%;
   }
 }
 main .menu-details {
@@ -233,6 +237,11 @@ main .menu-details {
   flex-direction: column;
 }
 
+@media all and (max-width: 768px) {
+  main .menu-details {
+    margin-top: 4%;
+  }
+}
 main p {
   margin-top: -1%;
 }
@@ -259,12 +268,24 @@ main button {
   color: white;
 }
 
+@media all and (max-width: 768px) {
+  main button {
+    width: 56%;
+    margin-top: 10%;
+    margin-left: 23%;
+  }
+}
 /* Pied de Page */
 footer {
   position: relative;
   top: 355px;
 }
 
+@media all and (max-width: 768px) {
+  footer {
+    top: 221px;
+  }
+}
 /*# sourceMappingURL=menus.css.map */
 
 /*# sourceMappingURL=menus.css.map */

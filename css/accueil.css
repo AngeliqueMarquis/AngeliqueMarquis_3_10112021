@@ -105,6 +105,8 @@ header, form {
 @media all and (max-width: 768px) {
   header, form {
     height: 40px;
+    -webkit-box-shadow: 0 5px 10px #c6c6c6;
+    box-shadow: 0 5px 10px #c6c6c6;
   }
 }
 header img {
@@ -123,8 +125,6 @@ form {
   height: 50px;
   padding-left: 2%;
   margin-top: 2%;
-  -webkit-box-shadow: 0 5px 10px #c6c6c6;
-  box-shadow: 0 5px 10px #c6c6c6;
 }
 
 @media all and (max-width: 992px) {
@@ -137,13 +137,32 @@ form {
 }
 @media all and (max-width: 768px) {
   form {
-    padding-left: 8%;
+    padding-left: 15%;
     width: 92%;
   }
 }
+form ::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+form :-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+form ::-ms-input-placeholder {
+  color: black;
+  opacity: 1;
+}
+
+form ::placeholder {
+  color: black;
+  opacity: 1;
+}
+
 form input {
   margin: 3% 0 0 2%;
-  color: black;
   background-color: transparent;
   border-color: transparent;
 }
@@ -212,9 +231,13 @@ button a {
     text-align: center;
   }
 }
+.reservation p {
+  font-weight: 300;
+}
+
 @media all and (max-width: 768px) {
   .reservation p {
-    margin: -2% 0% 7% 0%;
+    margin: -2% 3% 7% 0%;
     color: grey;
   }
 }
@@ -282,6 +305,7 @@ button a {
 .fonctionnement i {
   padding-right: 5%;
   color: grey;
+  font-size: 17px;
 }
 
 @media all and (max-width: 768px) {

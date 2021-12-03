@@ -5,9 +5,11 @@ header, form
 {
     margin-top: 4%;
     text-align: center;
+    
     @media all and (max-width: 768px)
     {
         height: 40px;
+        @include ombres;
     }
 
 }
@@ -29,7 +31,6 @@ form
     height: 50px;
     padding-left: 2%;
     margin-top: 2%;
-    @include ombres;
 
     @media all and (max-width: 992px)
         {
@@ -41,26 +42,31 @@ form
 
     @media all and (max-width: 768px)
         {
-            padding-left: 8%;
+            padding-left: 15%;
             width: 92%;
         }
 
-    input
-    {
-        margin: 3% 0 0 2%;
-        color: black;
-        background-color: transparent;
-        border-color: transparent;
+        ::placeholder
+        {
+            color: black;
+            opacity: 1;
+        }
 
-        @media all and (max-width: 992px)
-        {
-            margin-top: 1%;
-        }
-        @media all and (max-width: 768px)
-        {
-            margin-top: 2%;
-        }
-    }
+            input
+            {
+                margin: 3% 0 0 2%;
+                background-color: transparent;
+                border-color: transparent;
+
+                @media all and (max-width: 992px)
+                {
+                    margin-top: 1%;
+                }
+                @media all and (max-width: 768px)
+                {
+                    margin-top: 2%;
+                }
+            }
 }
 
 /* Réservation */
@@ -108,9 +114,11 @@ button
 
             p
             {
+                font-weight: 300;
+                
                 @media all and (max-width: 768px)
                 {
-                    margin: -2% 0% 7% 0%;
+                    margin: -2% 3% 7% 0%;
                     color: grey;
                 }  
             }
@@ -170,6 +178,7 @@ button
         {
             padding-right: 5%;
             color: grey;
+            font-size: 17px;
 
             @media all and (max-width:768px)
             {
