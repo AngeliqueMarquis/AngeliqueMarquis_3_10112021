@@ -121,9 +121,13 @@ main img {
   object-fit: cover;
   object-position: bottom;
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 992px) {
   main img {
     width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  main img {
     object-fit: scale-down;
     height: auto;
   }
@@ -153,7 +157,7 @@ main h1 {
 }
 main h4 {
   border-bottom: 3px solid #99e2d0;
-  width: 14%;
+  width: 11%;
   padding-bottom: 1%;
   margin: 4% 56% 0% 3%;
 }
@@ -189,7 +193,7 @@ main .menu-details {
   padding: 2% 0% 2% 2%;
   margin-top: 3%;
   margin-right: 2%;
-  display: flex;
+  display: block;
   flex-direction: column;
 }
 @media all and (max-width: 768px) {
@@ -222,6 +226,7 @@ main button {
   width: 22%;
   height: 45px;
   margin-left: 39%;
+  cursor: pointer;
   background: linear-gradient(174deg, #FF79DA 0%, #9356DC 90%);
   border-radius: 23px;
   border: 0 solid transparent;

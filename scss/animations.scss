@@ -17,6 +17,7 @@
         content: "Chargement...";
         background: linear-gradient(30deg, $clr-secondaire, $clr-primaire);
         background-clip: text;
+        -webkit-background-clip : text;
         color: transparent;
         font: 1.5em 'shrikhand';
         position: absolute;
@@ -50,12 +51,13 @@
     background-image: linear-gradient($clr-primaire, $clr-secondaire);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip : text;
     transform: scale(1.2);
-    animation: fill 2s ease-out;
+    animation: coeur 2s ease-out;
     font-weight: bold;
 }
 
-@keyframes fill
+@keyframes coeur
 {
     0%
     {
@@ -68,21 +70,21 @@
     }
 }
 
-/* Confirmation */
+/* Animation selection d'un plat */
 
 .confirmation
 {
     position: absolute;
+    display: block;
     background-color: $clr-tertiaire;
     width: 73px;
     height: 73px;
-    border-radius: 15px 0 0 15px;
-    transform-origin: right;
+    border-radius: 0 15px 15px 0;
+    margin-top: -58px;
+    margin-left: 105%;
     visibility: hidden;
-    transition: confirmation 200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
-    margin-top: -7px;
-    margin-left: 30%;
-    text-overflow: ellipsis;
+    transform-origin: right;
+    transition: confirmation 2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
         i
         {
@@ -91,20 +93,46 @@
             font-size: 30px;
             top: 21px;
             left: 21px;
+            transition: check 2s ease-in-out both;
         }
 }
+
+.menu-details:hover
+        {
+            width: 87%;
+
+            .confirmation
+            {
+                margin-left: 83%;
+                margin-top: -20%;
+                visibility: visible;
+            }
+
+        }
+
+
 @keyframes confirmation 
 {
-    0% 
-    {
-              transform: translateX(0);
+    0% {
+            transform: translateX(0);
+        }
+
+    100% {
+            transform: translateX(-100px);
+            visibility: visible;
+    }
+}
+
+@keyframes check 
+{
+    0% {
+        transform: rotate(0);
     }
 
-    100% 
-    {
-              transform: translateX(-100px);
+    100% {
+        transform: rotate(360deg);
     }
-  }
+}
   
 /* Apparition progressive des plats */
 .entree
@@ -133,4 +161,11 @@
     {
         transform: translateY(0px);
     }
+}
+
+/* Eclaircissement des boutons */
+button:hover
+{
+    opacity: 0.8;
+    box-shadow: 0 5px 10px #171717; 
 }

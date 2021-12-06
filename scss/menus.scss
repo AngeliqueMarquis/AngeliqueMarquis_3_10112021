@@ -36,9 +36,14 @@ main
         object-fit: cover;
         object-position: bottom;
 
-        @media all and (max-width: 768px)
+        @media all and (max-width: 992px)
             {
                 width: 100%;
+            }
+
+
+        @media all and (max-width: 768px)
+            {
                 object-fit: scale-down;
                 height: auto;
             }
@@ -74,7 +79,7 @@ main
                 h4 
                 {
                     border-bottom: 3px solid #99e2d0;
-                    width: 14%;
+                    width: 11%;
                     padding-bottom: 1%;
                     margin: 4% 56% 0% 3%;
                 }   
@@ -116,7 +121,7 @@ main
                                     padding: 2% 0% 2% 2%;
                                     margin-top: 3%;
                                     margin-right: 2%;
-                                    display: flex;
+                                    display: block;
                                     flex-direction: column;
 
                                     @media all and (max-width: 768px)
@@ -155,6 +160,7 @@ main
                                                 width: 22%;
                                                 height: 45px;
                                                 margin-left: 39%;
+                                                cursor: pointer;
                                                 @include btn-degrade;
 
                                                 @media all and (max-width: 768px)

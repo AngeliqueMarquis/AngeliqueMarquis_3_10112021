@@ -8,7 +8,6 @@ body {
   margin-left: 4%;
   max-width: 1400px;
 }
-
 @media all and (max-width: 992px) {
   body {
     max-width: 992px;
@@ -16,6 +15,7 @@ body {
     margin-left: 0%;
   }
 }
+
 h1 {
   font-family: "shrikhand", sans-serif;
 }
@@ -38,7 +38,6 @@ footer {
   font-weight: 100;
   padding: 2%;
 }
-
 @media all and (max-width: 768px) {
   footer {
     height: 216px;
@@ -48,7 +47,6 @@ footer h1 {
   font-size: 25px;
   margin-top: 0%;
 }
-
 @media all and (max-width: 768px) {
   footer h1 {
     font-size: 18px;
@@ -58,16 +56,10 @@ footer h1 {
 }
 footer ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media all and (max-width: 992px) {
   footer ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -80,7 +72,6 @@ footer li {
   padding-top: 1%;
   margin-left: 10%;
 }
-
 @media all and (max-width: 992px) {
   footer li {
     margin-left: 0%;
@@ -95,7 +86,10 @@ footer a {
   text-decoration: none;
   color: white;
 }
-
-/*# sourceMappingURL=base.css.map */
+footer i::before {
+  margin-right: 7px;
+  width: 15px;
+  display: block;
+}
 
 /*# sourceMappingURL=base.css.map */

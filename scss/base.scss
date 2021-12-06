@@ -116,4 +116,12 @@ footer
                         text-decoration: none;
                         color: white;
                     }
+
+                    i::before
+                    {
+                        margin-right: 7px;
+                        width: 15px;
+                        display: block;
+                    }
 }
+
