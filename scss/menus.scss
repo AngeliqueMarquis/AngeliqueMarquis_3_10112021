@@ -122,12 +122,18 @@ main
                                     @media all and (max-width: 768px)
                                     {
                                         margin-top: 4%;
+                                        height: 60px;
                                     }
                                 }
 
                                     p 
                                     {
                                         margin-top: -1%;
+
+                                        @media all and (max-width:768px)
+                                        {
+                                            margin-top: -4%;
+                                        }
                                     }
 
                                         b
@@ -135,7 +141,12 @@ main
                                             display: flex;
                                             justify-content: flex-end;
                                             padding-right: 2%;
-                                            margin-top: -11%;
+                                            margin-top: -10%;
+
+                                            @media all and (max-width:768px)
+                                            {
+                                                padding-right: 5%;
+                                            }
                                         }
 
                                             button
@@ -154,6 +165,7 @@ main
                                                 }
                                             }
 }
+
 /* Pied de Page */
 footer
 {
@@ -163,5 +175,13 @@ footer
     @media all and (max-width: 768px)
     {
         top: 221px;
+        width: 96%;
+
+            i::before
+            {
+                margin-right: 7px;
+                width: 15px;
+                display: block;
+            }
     }
 }
