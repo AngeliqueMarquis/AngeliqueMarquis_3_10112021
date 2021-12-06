@@ -8,7 +8,6 @@ body {
   margin-left: 4%;
   max-width: 1400px;
 }
-
 @media all and (max-width: 992px) {
   body {
     max-width: 992px;
@@ -16,6 +15,7 @@ body {
     margin-left: 0%;
   }
 }
+
 h1 {
   font-family: "shrikhand", sans-serif;
 }
@@ -38,7 +38,6 @@ footer {
   font-weight: 100;
   padding: 2%;
 }
-
 @media all and (max-width: 768px) {
   footer {
     height: 216px;
@@ -48,7 +47,6 @@ footer h1 {
   font-size: 25px;
   margin-top: 0%;
 }
-
 @media all and (max-width: 768px) {
   footer h1 {
     font-size: 18px;
@@ -58,16 +56,10 @@ footer h1 {
 }
 footer ul {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 @media all and (max-width: 992px) {
   footer ul {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -80,7 +72,6 @@ footer li {
   padding-top: 1%;
   margin-left: 10%;
 }
-
 @media all and (max-width: 992px) {
   footer li {
     margin-left: 0%;
@@ -95,20 +86,22 @@ footer a {
   text-decoration: none;
   color: white;
 }
+footer i::before {
+  margin-right: 7px;
+  width: 15px;
+  display: block;
+}
 
-/* Chargement */
+/* Animation de chargement de la page */
 .chargement {
   background-color: white;
   position: fixed;
   z-index: 1;
   inset: 0;
   width: 100%;
-  -webkit-animation: load 3s forwards;
   animation: load 3s forwards;
-  -webkit-transform-origin: center;
   transform-origin: center;
 }
-
 .chargement::after {
   content: "Chargement...";
   background: linear-gradient(30deg, #FF79DA, #9356DC);
@@ -118,21 +111,12 @@ footer a {
   position: absolute;
   margin: 27% 0 0 42%;
 }
-
 @media all and (max-width: 768px) {
   .chargement::after {
     margin: 80% 0% 0% 30%;
   }
 }
-@-webkit-keyframes load {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
+
 @keyframes load {
   from {
     opacity: 1;
@@ -142,27 +126,16 @@ footer a {
     visibility: hidden;
   }
 }
-/* Restaurants */
+/* Animation des coeurs */
 .fa-heart:hover {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
   background-image: linear-gradient(#9356DC, #FF79DA);
   color: transparent;
   background-clip: text;
-  -webkit-transform: scale(1.2);
   transform: scale(1.2);
-  -webkit-animation: fill 2s ease-out;
   animation: fill 2s ease-out;
   font-weight: bold;
 }
 
-@-webkit-keyframes fill {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 @keyframes fill {
   0% {
     opacity: 0;
@@ -178,16 +151,13 @@ footer a {
   width: 73px;
   height: 73px;
   border-radius: 15px 0 0 15px;
-  -webkit-transform-origin: right;
   transform-origin: right;
   visibility: hidden;
-  -webkit-transition: confirmation 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: confirmation 200ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
   margin-top: -7px;
   margin-left: 30%;
   text-overflow: ellipsis;
 }
-
 .confirmation i {
   position: relative;
   color: white;
@@ -196,26 +166,34 @@ footer a {
   left: 21px;
 }
 
-@-webkit-keyframes confirmation {
-  0% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-  }
-}
 @keyframes confirmation {
   0% {
-    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-100px);
     transform: translateX(-100px);
   }
 }
-/*# sourceMappingURL=animations.css.map */
+/* Apparition progressive des plats */
+.entree {
+  animation: apparition 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.plat {
+  animation: apparition 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.dessert {
+  animation: apparition 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes apparition {
+  0% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 
 /*# sourceMappingURL=animations.css.map */

@@ -1,6 +1,6 @@
 @import "base";
 
-/* Chargement */
+/* Animation de chargement de la page */
 
 .chargement
 {
@@ -44,7 +44,7 @@
     }
 }
 
-/* Restaurants */
+/* Animation des coeurs */
 .fa-heart:hover
 {
     background-image: linear-gradient($clr-primaire, $clr-secondaire);
@@ -106,3 +106,31 @@
     }
   }
   
+/* Apparition progressive des plats */
+.entree
+{
+    animation: apparition 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.plat
+{
+    animation: apparition 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.dessert
+{
+    animation: apparition 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes apparition 
+{
+    0% 
+    {
+        transform: translateY(-100px);
+    }
+      
+    100% 
+    {
+        transform: translateY(0px);
+    }
+}
