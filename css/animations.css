@@ -18,10 +18,11 @@ body {
 
 h1 {
   font-family: "shrikhand", sans-serif;
+  font-weight: 400;
 }
 
 h2, h3 {
-  font-weight: 900;
+  font-weight: 500;
   margin-top: 2%;
   font-family: "roboto", sans-serif;
 }
@@ -29,6 +30,10 @@ h2, h3 {
 h4 {
   font-family: "roboto", sans-serif;
   font-weight: normal;
+}
+
+p {
+  font-weight: 300;
 }
 
 /*Pied de page*/
@@ -85,6 +90,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: white;
+  font-weight: 400;
 }
 footer i::before {
   margin-right: 7px;
@@ -152,68 +158,67 @@ footer i::before {
   display: block;
   background-color: #99E2D0;
   width: 73px;
-  height: 73px;
+  height: 74px;
   border-radius: 0 15px 15px 0;
   margin-top: -58px;
   margin-left: 105%;
   visibility: hidden;
-  transform-origin: right;
-  transition: confirmation 2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transform: translateX(100px);
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0 1px 10px #c9c9c9;
 }
 .confirmation i {
   position: relative;
   color: white;
+  font-weight: bold;
   font-size: 30px;
   top: 21px;
   left: 21px;
-  transition: check 2s ease-in-out both;
+  transform: rotate(180deg);
+  transition-duration: 1s;
 }
 
 .menu-details:hover {
   width: 87%;
+  transition: width 1s ease-in-out;
+  border-radius: 15px 0px 0px 15px;
 }
 .menu-details:hover .confirmation {
-  margin-left: 83%;
-  margin-top: -20%;
+  margin-left: 94%;
+  margin-top: -7px;
   visibility: visible;
+  transform: translateX(0);
+}
+.menu-details:hover i {
+  transform: rotate(0deg);
 }
 
-@keyframes confirmation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100px);
-    visibility: visible;
-  }
-}
-@keyframes check {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /* Apparition progressive des plats */
-.entree {
-  animation: apparition 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.menu-details {
+  animation: apparition 1s forwards;
+  opacity: 0;
 }
-
-.plat {
-  animation: apparition 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.menu-details:nth-child(2) {
+  animation-delay: 0.4s;
 }
-
-.dessert {
-  animation: apparition 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.menu-details:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.menu-details:nth-child(4) {
+  animation-delay: 0.8s;
+}
+.menu-details:nth-child(5) {
+  animation-delay: 1s;
 }
 
 @keyframes apparition {
   0% {
     transform: translateY(-100px);
+    opacity: 0;
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 /* Eclaircissement des boutons */

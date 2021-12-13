@@ -78,88 +78,89 @@
     display: block;
     background-color: $clr-tertiaire;
     width: 73px;
-    height: 73px;
+    height: 74px;
     border-radius: 0 15px 15px 0;
     margin-top: -58px;
     margin-left: 105%;
     visibility: hidden;
-    transform-origin: right;
-    transition: confirmation 2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
+    transform: translateX(100px);
+    transition: transform 0.2s ease-in-out;
+    @include ombres;
 
         i
         {
             position: relative;
             color: white;
+            font-weight: bold;
             font-size: 30px;
             top: 21px;
             left: 21px;
-            transition: check 2s ease-in-out both;
+            transform: rotate(180deg);
+            transition-duration: 1s;   
         }
 }
 
 .menu-details:hover
         {
             width: 87%;
+            transition: width 1s ease-in-out;
+            border-radius: 15px 0px 0px 15px;
 
             .confirmation
             {
-                margin-left: 83%;
-                margin-top: -20%;
+                margin-left: 94%;
+                margin-top: -7px;
                 visibility: visible;
+                transform: translateX(0);
             }
 
+                i
+                {
+                    transform: rotate(0deg);
+                }
+
         }
-
-
-@keyframes confirmation 
-{
-    0% {
-            transform: translateX(0);
-        }
-
-    100% {
-            transform: translateX(-100px);
-            visibility: visible;
-    }
-}
-
-@keyframes check 
-{
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
   
 /* Apparition progressive des plats */
-.entree
+.menu-details
 {
-    animation: apparition 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: apparition 1s forwards;
+    opacity: 0;
+
+    &:nth-child(2)
+    {
+        animation-delay: calc(2s / 5);
+    }
+
+    &:nth-child(3)
+    {
+        animation-delay: calc(3s / 5);
+    }
+
+    &:nth-child(4)
+    {
+        animation-delay: calc(4s / 5);
+    }
+
+    &:nth-child(5)
+    {
+        animation-delay: calc(5s / 5);
+    }
 }
 
-.plat
-{
-    animation: apparition 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.dessert
-{
-    animation: apparition 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
 
 @keyframes apparition 
 {
     0% 
     {
         transform: translateY(-100px);
+        opacity: 0;
     }
       
     100% 
     {
         transform: translateY(0px);
+        opacity: 1;
     }
 }
 
