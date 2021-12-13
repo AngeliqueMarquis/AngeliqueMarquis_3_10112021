@@ -299,6 +299,18 @@ button
                             object-position: 0% 100%;
                         }
 
+                            .tag
+                            {
+                                background-color: $clr-tertiaire;
+                                color: darken($clr-tertiaire,40);
+                                border-radius: 2px;
+                                position: absolute;
+                                top: 5%;
+                                right: 4%;
+                                padding: 2% 4%;
+                                font-weight: 500;
+                            }
+
                             h3, p
                             {
                                 margin-left: 2%;
