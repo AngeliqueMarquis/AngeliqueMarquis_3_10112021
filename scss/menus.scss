@@ -23,6 +23,10 @@ header
             width: 42%;  
         }
     }
+        i::before
+        {
+            margin-left: 70%;
+        }
 }
 
 /* Menu */
@@ -60,7 +64,7 @@ main
             
             @media all and (max-width: 768px)
             {
-                top: 220px;
+                top: 201px;
                 padding: 5%;
             }
         }
@@ -121,8 +125,10 @@ main
                                     padding: 2% 0% 2% 2%;
                                     margin-top: 3%;
                                     margin-right: 2%;
-                                    display: block;
+                                    display: flex;
                                     flex-direction: column;
+                                    white-space: nowrap;
+                                    @include ombres;
 
                                     @media all and (max-width: 768px)
                                     {
@@ -131,45 +137,51 @@ main
                                     }
                                 }
 
-                                    p 
-                                    {
-                                        margin-top: -1%;
-
-                                        @media all and (max-width:768px)
-                                        {
-                                            margin-top: -4%;
-                                        }
-                                    }
-
-                                        b
-                                        {
-                                            display: flex;
-                                            justify-content: flex-end;
-                                            padding-right: 2%;
-                                            margin-top: -10%;
-
-                                            @media all and (max-width:768px)
+                                            h3
                                             {
-                                                padding-right: 5%;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
                                             }
-                                        }
 
-                                            button
+                                            p 
                                             {
-                                                margin-top: 2%;
-                                                width: 22%;
-                                                height: 45px;
-                                                margin-left: 39%;
-                                                cursor: pointer;
-                                                @include btn-degrade;
+                                                margin-top: -1%;
 
-                                                @media all and (max-width: 768px)
+                                                @media all and (max-width:768px)
                                                 {
-                                                    width: 56%;
-                                                    margin-top: 10%;
-                                                    margin-left: 23%;
+                                                    margin-top: -4%;
                                                 }
                                             }
+
+                                                b
+                                                {
+                                                    display: flex;
+                                                    justify-content: flex-end;
+                                                    padding-right: 2%;
+                                                    margin-top: -10%;
+
+                                                    @media all and (max-width:768px)
+                                                    {
+                                                        padding-right: 5%;
+                                                    }
+                                                }
+
+                                                    button
+                                                    {
+                                                        margin-top: 2%;
+                                                        width: 22%;
+                                                        height: 45px;
+                                                        margin-left: 39%;
+                                                        cursor: pointer;
+                                                        @include btn-degrade;
+
+                                                        @media all and (max-width: 768px)
+                                                        {
+                                                            width: 56%;
+                                                            margin-top: 10%;
+                                                            margin-left: 23%;
+                                                        }
+                                                    }
 }
 
 /* Pied de Page */
@@ -180,7 +192,7 @@ footer
 
     @media all and (max-width: 768px)
     {
-        top: 221px;
+        top: 201px;
         width: 96%;
 
             i::before

@@ -18,10 +18,11 @@ body {
 
 h1 {
   font-family: "shrikhand", sans-serif;
+  font-weight: 400;
 }
 
 h2, h3 {
-  font-weight: 900;
+  font-weight: 500;
   margin-top: 2%;
   font-family: "roboto", sans-serif;
 }
@@ -29,6 +30,10 @@ h2, h3 {
 h4 {
   font-family: "roboto", sans-serif;
   font-weight: normal;
+}
+
+p {
+  font-weight: 300;
 }
 
 /*Pied de page*/
@@ -85,6 +90,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: white;
+  font-weight: 400;
 }
 footer i::before {
   margin-right: 7px;
@@ -111,6 +117,9 @@ header img {
     padding-left: 24%;
     width: 42%;
   }
+}
+header i::before {
+  margin-left: 70%;
 }
 
 /* Menu */
@@ -142,7 +151,7 @@ main section {
 }
 @media all and (max-width: 768px) {
   main section {
-    top: 220px;
+    top: 201px;
     padding: 5%;
   }
 }
@@ -193,14 +202,20 @@ main .menu-details {
   padding: 2% 0% 2% 2%;
   margin-top: 3%;
   margin-right: 2%;
-  display: block;
+  display: flex;
   flex-direction: column;
+  white-space: nowrap;
+  box-shadow: 0 1px 10px #c9c9c9;
 }
 @media all and (max-width: 768px) {
   main .menu-details {
     margin-top: 4%;
     height: 60px;
   }
+}
+main h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 main p {
   margin-top: -1%;
@@ -247,7 +262,7 @@ footer {
 }
 @media all and (max-width: 768px) {
   footer {
-    top: 221px;
+    top: 201px;
     width: 96%;
   }
   footer i::before {
