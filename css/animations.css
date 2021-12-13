@@ -194,10 +194,11 @@ footer i::before {
 }
 .menu-details:hover b, .menu-details:hover h3 {
   margin-right: 6%;
+  padding-bottom: 2%;
 }
 .menu-details:hover p {
   width: 73%;
-  margin-right: 6%;
+  margin-right: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
