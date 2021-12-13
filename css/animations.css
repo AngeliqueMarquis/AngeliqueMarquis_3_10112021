@@ -192,6 +192,15 @@ footer i::before {
 .menu-details:hover i {
   transform: rotate(0deg);
 }
+.menu-details:hover b, .menu-details:hover h3 {
+  margin-right: 6%;
+}
+.menu-details:hover p {
+  width: 73%;
+  margin-right: 6%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* Apparition progressive des plats */
 .menu-details {
