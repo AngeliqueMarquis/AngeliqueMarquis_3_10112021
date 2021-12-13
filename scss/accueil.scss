@@ -299,7 +299,7 @@ button
                             object-position: 0% 100%;
                         }
 
-                            .tag
+                            .encart
                             {
                                 background-color: $clr-tertiaire;
                                 color: darken($clr-tertiaire,40);
@@ -311,32 +311,32 @@ button
                                 font-weight: 500;
                             }
 
-                            h3, p
-                            {
-                                margin-left: 2%;
-
-                                @media all and (max-width: 768px)
+                                h3, p
                                 {
-                                    margin-left: 4%;
-                                    margin-top: 3%;
-                                }
-                            }
-                                i
-                                {
-                                    position: absolute;
-                                    bottom: 14%;
-                                    left: 85%;
-                                    font-size: 20px;
-                                }
+                                    margin-left: 2%;
 
-                                    p
+                                    @media all and (max-width: 768px)
                                     {
-                                        margin-top: -4%;
+                                        margin-left: 4%;
+                                        margin-top: 3%;
                                     }
-                                        ::before
+                                }
+                                    i
+                                    {
+                                        position: absolute;
+                                        bottom: 14%;
+                                        left: 85%;
+                                        font-size: 20px;
+                                    }
+
+                                        p
                                         {
-                                            display: flex;
-                                            flex-wrap: wrap;
+                                            margin-top: -4%;
                                         }
+                                            ::before
+                                            {
+                                                display: flex;
+                                                flex-wrap: wrap;
+                                            }
 }
 
