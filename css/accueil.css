@@ -18,10 +18,11 @@ body {
 
 h1 {
   font-family: "shrikhand", sans-serif;
+  font-weight: 400;
 }
 
 h2, h3 {
-  font-weight: 900;
+  font-weight: 500;
   margin-top: 2%;
   font-family: "roboto", sans-serif;
 }
@@ -29,6 +30,10 @@ h2, h3 {
 h4 {
   font-family: "roboto", sans-serif;
   font-weight: normal;
+}
+
+p {
+  font-weight: 300;
 }
 
 /*Pied de page*/
@@ -85,6 +90,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: white;
+  font-weight: 400;
 }
 footer i::before {
   margin-right: 7px;
@@ -100,7 +106,7 @@ header, form {
 @media all and (max-width: 768px) {
   header, form {
     height: 40px;
-    box-shadow: 0 5px 10px #c6c6c6;
+    box-shadow: 0 1px 10px #c9c9c9;
   }
 }
 
@@ -163,7 +169,7 @@ button {
   border-radius: 23px;
   border: 0 solid transparent;
   color: white;
-  box-shadow: 0 5px 10px #c6c6c6;
+  box-shadow: 0 1px 10px #c9c9c9;
 }
 @media all and (max-width: 992px) {
   button {
@@ -205,7 +211,6 @@ button a {
 @media all and (max-width: 768px) {
   .reservation p {
     margin: -2% 3% 7% 0%;
-    color: grey;
   }
 }
 @media all and (max-width: 768px) {
@@ -242,7 +247,7 @@ button a {
   width: 250px;
   height: 60px;
   padding-left: 2%;
-  box-shadow: 0 5px 10px #c6c6c6;
+  box-shadow: 0 1px 10px #c9c9c9;
 }
 @media all and (max-width: 992px) {
   .fonctionnement .cartes {
@@ -259,7 +264,7 @@ button a {
 .fonctionnement i {
   padding-right: 5%;
   color: grey;
-  font-size: 17px;
+  font-size: 18px;
 }
 @media all and (max-width: 768px) {
   .fonctionnement i {
@@ -344,7 +349,7 @@ button a {
   display: block;
   position: relative;
   margin: -1% -1% 3% 3%;
-  box-shadow: 0 5px 10px #c6c6c6;
+  box-shadow: 0 1px 10px #c9c9c9;
 }
 @media all and (max-width: 992px) {
   .restaurants .details-restaurants {
@@ -364,7 +369,7 @@ button a {
   width: 100%;
   height: 70%;
   object-fit: cover;
-  object-position: bottom;
+  object-position: 0% 100%;
 }
 .restaurants h3, .restaurants p {
   margin-left: 2%;

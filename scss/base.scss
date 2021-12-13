@@ -1,7 +1,7 @@
 /* Mixins */
 @mixin ombres 
 {
-    box-shadow: 0 5px 10px #c6c6c6;    
+    box-shadow: 0 1px 10px #c9c9c9;    
 }
 
 @mixin btn-degrade 
@@ -38,11 +38,12 @@ body
 h1
 {
     font-family: 'shrikhand', sans-serif;
+    font-weight: 400;
 }
 
 h2, h3
 {
-    font-weight: 900;
+    font-weight: 500;
     margin-top: 2%;
     font-family: 'roboto', sans-serif;
 }
@@ -51,6 +52,11 @@ h4
 {
     font-family: 'roboto', sans-serif;
     font-weight: normal;
+}
+
+p
+{
+    font-weight: 300;
 }
 
 /*Pied de page*/
@@ -115,6 +121,7 @@ footer
                     {
                         text-decoration: none;
                         color: white;
+                        font-weight: 400;
                     }
 
                     i::before

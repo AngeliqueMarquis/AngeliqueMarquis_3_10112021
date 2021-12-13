@@ -18,10 +18,11 @@ body {
 
 h1 {
   font-family: "shrikhand", sans-serif;
+  font-weight: 400;
 }
 
 h2, h3 {
-  font-weight: 900;
+  font-weight: 500;
   margin-top: 2%;
   font-family: "roboto", sans-serif;
 }
@@ -29,6 +30,10 @@ h2, h3 {
 h4 {
   font-family: "roboto", sans-serif;
   font-weight: normal;
+}
+
+p {
+  font-weight: 300;
 }
 
 /*Pied de page*/
@@ -85,6 +90,7 @@ footer li {
 footer a {
   text-decoration: none;
   color: white;
+  font-weight: 400;
 }
 footer i::before {
   margin-right: 7px;

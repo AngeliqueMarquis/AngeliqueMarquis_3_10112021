@@ -119,7 +119,6 @@ button
                 @media all and (max-width: 768px)
                 {
                     margin: -2% 3% 7% 0%;
-                    color: grey;
                 }  
             }
 
@@ -178,7 +177,7 @@ button
         {
             padding-right: 5%;
             color: grey;
-            font-size: 17px;
+            font-size: 18px;
 
             @media all and (max-width:768px)
             {
@@ -297,7 +296,7 @@ button
                             width:100%;
                             height: 70%;
                             object-fit: cover;
-                            object-position: bottom;
+                            object-position: 0% 100%;
                         }
 
                             h3, p
