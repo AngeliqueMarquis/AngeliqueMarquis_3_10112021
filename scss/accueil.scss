@@ -8,7 +8,7 @@ header, form
     
     @media all and (max-width: 768px)
     {
-        height: 40px;
+        height: 51px;
         @include ombres;
     }
 
@@ -20,6 +20,7 @@ header img
     @media all and (max-width: 768px)
     {
         width: 40%;
+        padding-top: 3%;
     }
 }
 
@@ -126,7 +127,7 @@ button
                 {
                     @media all and (max-width: 768px)
                     {
-                        padding: 0% 11% 0% 11%;
+                        padding: 0% 12% 0% 12%;
                     }
                 }
 }
@@ -337,6 +338,7 @@ button
                                             {
                                                 display: flex;
                                                 flex-wrap: wrap;
+                                                font-size: 25px;
                                             }
 }
 
