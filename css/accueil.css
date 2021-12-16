@@ -105,8 +105,7 @@ header, form {
 }
 @media all and (max-width: 768px) {
   header, form {
-    height: 51px;
-    box-shadow: 0 1px 10px #c9c9c9;
+    height: 40px;
   }
 }
 
@@ -116,7 +115,7 @@ header img {
 @media all and (max-width: 768px) {
   header img {
     width: 40%;
-    padding-top: 3%;
+    padding-top: 1%;
   }
 }
 
@@ -140,6 +139,7 @@ form {
   form {
     padding-left: 15%;
     width: 85%;
+    box-shadow: inset 0px 2px 2px #c9c9c9;
   }
 }
 form ::placeholder {

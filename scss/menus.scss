@@ -147,6 +147,9 @@ main
                                             p 
                                             {
                                                 margin-top: -1%;
+                                                overflow: hidden;
+                                                text-overflow: ellipsis;
+                                                width: 80%;
 
                                                 @media all and (max-width:768px)
                                                 {
