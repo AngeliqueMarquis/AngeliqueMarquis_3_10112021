@@ -23,10 +23,10 @@ header
             width: 42%;  
         }
     }
-        i::before
-        {
-            margin-left: 70%;
-        }
+            i::before
+            {
+                margin-left: 70%;
+            }
 }
 
 /* Menu */
@@ -144,47 +144,47 @@ main
                                                 text-overflow: ellipsis;
                                             }
 
-                                            p 
-                                            {
-                                                margin-top: -1%;
-                                                overflow: hidden;
-                                                text-overflow: ellipsis;
-                                                width: 80%;
-
-                                                @media all and (max-width:768px)
+                                                p 
                                                 {
-                                                    margin-top: -4%;
-                                                }
-                                            }
-
-                                                b
-                                                {
-                                                    display: flex;
-                                                    justify-content: flex-end;
-                                                    padding-right: 2%;
-                                                    margin-top: -10%;
+                                                    margin-top: -1%;
+                                                    overflow: hidden;
+                                                    text-overflow: ellipsis;
+                                                    width: 80%;
 
                                                     @media all and (max-width:768px)
                                                     {
-                                                        padding-right: 5%;
+                                                        margin-top: -4%;
                                                     }
                                                 }
 
-                                                    button
+                                                    b
                                                     {
-                                                        margin-top: 2%;
-                                                        width: 22%;
-                                                        height: 45px;
-                                                        margin-left: 39%;
-                                                        cursor: pointer;
-                                                        @include btn-degrade;
+                                                        display: flex;
+                                                        justify-content: flex-end;
+                                                        padding-right: 2%;
+                                                        margin-top: -10%;
 
-                                                        @media all and (max-width: 768px)
+                                                        @media all and (max-width:768px)
                                                         {
-                                                            width: 56%;
-                                                            margin-top: 10%;
-                                                            margin-left: 23%;
+                                                            padding-right: 5%;
                                                         }
+                                                    }
+
+                                                        button
+                                                        {
+                                                            margin-top: 2%;
+                                                            width: 22%;
+                                                            height: 45px;
+                                                            margin-left: 39%;
+                                                            cursor: pointer;
+                                                            @include btn-degrade;
+
+                                                            @media all and (max-width: 768px)
+                                                            {
+                                                                width: 56%;
+                                                                margin-top: 10%;
+                                                                margin-left: 23%;
+                                                            }
                                                     }
 }
 

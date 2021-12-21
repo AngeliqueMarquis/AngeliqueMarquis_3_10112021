@@ -163,7 +163,7 @@ footer i::before {
   margin-top: -58px;
   margin-left: 105%;
   visibility: hidden;
-  transform: translateX(100px);
+  transform: scale(0);
   transition: transform 0.2s ease-in-out;
   box-shadow: 0 1px 10px #c9c9c9;
 }
@@ -182,28 +182,67 @@ footer i::before {
   width: 87%;
   transition: width 1s ease-in-out;
   border-radius: 15px 0px 0px 15px;
+  height: 60px;
+}
+@media all and (max-width: 992px) {
+  .menu-details:hover {
+    height: 62px;
+  }
+}
+@media all and (max-width: 992px) {
+  .menu-details:hover {
+    height: 59px;
+  }
 }
 .menu-details:hover .confirmation {
   margin-left: 94%;
   margin-top: -7px;
   visibility: visible;
-  transform: translateX(0);
+  transform: scale(1);
 }
 .menu-details:hover i {
   transform: rotate(0deg);
 }
-.menu-details:hover b, .menu-details:hover h3 {
+.menu-details:hover h3 {
   margin-right: 6%;
   margin-bottom: 2%;
 }
+@media all and (max-width: 992px) {
+  .menu-details:hover h3 {
+    margin-bottom: 3%;
+  }
+}
 @media all and (max-width: 768px) {
-  .menu-details:hover b, .menu-details:hover h3 {
-    padding-bottom: 2%;
+  .menu-details:hover h3 {
+    padding-bottom: 0;
+  }
+}
+.menu-details:hover b {
+  margin-right: 6%;
+  padding-bottom: 6px;
+}
+@media all and (max-width: 992px) {
+  .menu-details:hover b {
+    padding-bottom: 0;
+    padding-top: 1%;
+  }
+}
+@media all and (max-width: 768px) {
+  .menu-details:hover b {
+    padding-bottom: 0;
+    margin-bottom: revert;
+    margin-top: -9%;
   }
 }
 .menu-details:hover p {
   width: 73%;
   margin-right: 0;
+  padding-top: 2%;
+}
+@media all and (max-width: 992px) {
+  .menu-details:hover p {
+    margin-bottom: 4px;
+  }
 }
 
 /* Apparition progressive des plats */

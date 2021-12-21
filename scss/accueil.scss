@@ -174,53 +174,53 @@ button
             margin-bottom: 3%;
         }
     }
-        i
-        {
-            padding-right: 5%;
-            color: grey;
-            font-size: 18px;
+            i
+            {
+                padding-right: 5%;
+                color: grey;
+                font-size: 18px;
 
-            @media all and (max-width:768px)
-            {
-                padding: 0% 7% 1% 8%;
-            }
-        }
-
-            p
-            {
-                position: absolute;
-                left: -4%;
-                background-color: $clr-primaire;
-                color: white;
-                border-radius: 100%;
-                width: 25px;
-                height: 25px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }       
-                :hover
-            {
-                background-color: lighten($color: $clr-primaire, $amount: 35);
-            }
-                & i:hover
+                @media all and (max-width:768px)
                 {
-                    color: $clr-primaire;
+                    padding: 0% 7% 1% 8%;
                 }
+            }
 
-                    h2
+                p
+                {
+                    position: absolute;
+                    left: -4%;
+                    background-color: $clr-primaire;
+                    color: white;
+                    border-radius: 100%;
+                    width: 25px;
+                    height: 25px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }       
+                    :hover
+                {
+                    background-color: lighten($color: $clr-primaire, $amount: 35);
+                }
+                    & i:hover
                     {
-                        @media all and (max-width: 992px)
-                        {
-                            margin-left: -77%;
-                        }
-                        @media all and (max-width: 768px)
-                        {
-                           text-align: start;
-                           margin-left: -46%;
-                           padding-top: 8%;
-                        }
+                        color: $clr-primaire;
                     }
+
+                        h2
+                        {
+                            @media all and (max-width: 992px)
+                            {
+                                margin-left: -77%;
+                            }
+                            @media all and (max-width: 768px)
+                            {
+                            text-align: start;
+                            margin-left: -46%;
+                            padding-top: 8%;
+                            }
+                        }
 }
 
 /*Restaurants*/
